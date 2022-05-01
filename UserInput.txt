@@ -1,0 +1,85 @@
+;General Specification
+;---------------------
+	SLEEPTIME = 200 ;DELAY OF BUTTON CLICKS
+	SHOULD_CLICK := 1
+
+; Item Settings
+; -------------
+viciousTonic := 0
+timeElixir := 0
+potion := 0
+
+;Training Specification
+;----------------------
+	MAXTP = 300 ;your maximum training points
+	USE_POTION := 0
+	
+;Quest Selection Specification
+;-----------------------------
+	QUEST = 7 ; Enter 1,2,3,4,5,6, or 7
+	EPISODE = 59
+;Quest Battle specification
+;--------------------------												 
+	DEPLOY_NUMBER = 3 	;number of units to deploy
+	ATTACK_TYPE = 0 	 	;land = 1, air = 2, sea = 3, default = 0
+	ATTRIB_TYPE = 0		;Melee = 1, missile = 2, magic = 3, all = 0
+	LEVELBOT = 1		;0 = no, 1 = set starting point specifically for quest 2-7
+	BOTALLQUEST = 0     ;0 = repeat the same quest, 1 = quest progression
+	SKIPQUEST = 1		;1 = speeds up quest battle, 0 = ignore the skip quest button in quest
+
+; Inbox Specification
+;--------------------
+    CheckInbox := 0
+
+;============================================
+;********************************************
+;-------   MAIN MENU ICON MAPPINGS ----------
+;********************************************
+;============================================
+; -- First icon starts at index 0 --
+	QUEST_INDEX := 4
+    TRAINING_INDEX := 5
+    INBOX_INDEX := 14
+    BATTLE_INDEX := 13
+
+;============================================
+;********************************************
+;--------------- EVENT SETTINGS -------------
+;********************************************
+;============================================
+    ; -- Used in conjunction with questing --
+	BotEvent := 0
+    
+    ; -- Training-Encounter event --
+	TrainEncounterEvent := 0
+	TrainEncounterEvent_USEITEM := 0
+    
+    ; -- Coliseum Event --
+    ColiseumEvent := 0
+    
+    ; -- Frontlines Event --
+    FrontlinesEvent := 0
+    FrontlinesHolyWaterCount := 0
+    
+    ; -- Roll the Dice --
+    RollTheDiceEvent := 1
+    RollTheDiceUseDrops := 0
+    RollTheDiceDropsCount := 4
+    RollTheDiceUsePotion := 1
+    RollTheDiceDoEvent := 1
+    RollTheDiceMasterDice := 0
+    RollTheDicePortraitDice := 0
+    RollTheDiceSketchDice := 1
+    
+    ; -- Clash of Legends --
+    ClashOfLegendsEvent := 0
+    
+	TIME_ELIXIR = 0
+	SEARCHLIMIT := 2
+
+	;Revelations Event
+	;-----------------
+		SELECTEDTOWER := 2	;0 = agony, 1 = chains, 2 = light
+		FIGHTBOSS = 0 		;0 = flee, 1 = fight
+		;REVELATIONTOWER := 0 	;1 = yes, it is this event and will affect the unit placement algorithm
+						; 0 = no, it is not this event and use the default unit placement algorithm
